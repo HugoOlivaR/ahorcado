@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ahorcado</title>   
+</head>
+<body>
+
+    <div class="borroso" id="borroso">
+        <div><img class="papanoel1" src="recursos/img/papanoel1.png" alt="imagen_papanoel1"></div>
+        <div id="papanoel2" hidden><img class="papanoel2" src="recursos/img/papanoel2.png" alt="imagen_papanoel2"></div>
+        <div id="papanoel3" hidden><img class="papanoel3" src="recursos/img/papanoel3.png" alt="imagen_papanoel3"></div>
+        <div id="papanoel4" hidden><img class="papanoel4" src="recursos/img/papanoel4.png" alt="imagen_papanoel4"></div>
+        <div id="papanoel5" hidden><img class="papanoel5" src="recursos/img/papanoel5.png" alt="imagen_papanoel5"></div>
+        <div id="papanoel6" hidden><img class="papanoel6" src="recursos/img/papanoel6.png" alt="imagen_papanoel6"></div>
+        <div id="papanoel7" hidden><img class="papanoel7" src="recursos/img/papanoel7.png" alt="imagen_papanoel7"></div>
+        <img class="trineo" src="recursos/img/trineo.png" alt="imagen_trineo">
+
+
+        <div class="botones">
+            <button id="buttona" onclick="elegirLetra('a'); cambioColor('a')">A</button>
+            <button id="buttonb" onclick="elegirLetra('b'); cambioColor('b')">B</button>
+            <button id="buttonc" onclick="elegirLetra('c'); cambioColor('c')">C</button>
+            <button id="buttond" onclick="elegirLetra('d'); cambioColor('d')">D</button>
+            <button id="buttone" onclick="elegirLetra('e'); cambioColor('e')">E</button>
+            <button id="buttonf" onclick="elegirLetra('f'); cambioColor('f')">F</button>
+            <button id="buttong" onclick="elegirLetra('g'); cambioColor('g')">G</button>
+            <button id="buttonh" onclick="elegirLetra('h'); cambioColor('h')">H</button>
+            <button id="buttoni" onclick="elegirLetra('i'); cambioColor('i')">I</button>
+            <br>
+            <button id="buttonj" onclick="elegirLetra('j'); cambioColor('j')">J</button>
+            <button id="buttonk" onclick="elegirLetra('k'); cambioColor('k')">K</button>
+            <button id="buttonl" onclick="elegirLetra('l'); cambioColor('l')">L</button>
+            <button id="buttonm" onclick="elegirLetra('m'); cambioColor('m')">M</button>
+            <button id="buttonn" onclick="elegirLetra('n'); cambioColor('n')">N</button>
+            <button id="buttonñ" onclick="elegirLetra('ñ'); cambioColor('ñ')">Ñ</button>
+            <button id="buttono" onclick="elegirLetra('o'); cambioColor('o')">O</button>
+            <button id="buttonp" onclick="elegirLetra('p'); cambioColor('p')">P</button>
+            <button id="buttonq" onclick="elegirLetra('q'); cambioColor('q')">Q</button>
+            <br>
+            <button id="buttonr" onclick="elegirLetra('r'); cambioColor('r')">R</button>
+            <button id="buttons" onclick="elegirLetra('s'); cambioColor('s')">S</button>
+            <button id="buttont" onclick="elegirLetra('t'); cambioColor('t')">T</button>
+            <button id="buttonu" onclick="elegirLetra('u'); cambioColor('u')">U</button>
+            <button id="buttonv" onclick="elegirLetra('v'); cambioColor('v')">V</button>
+            <button id="buttonw" onclick="elegirLetra('w'); cambioColor('w')">W</button>
+            <button id="buttonx" onclick="elegirLetra('x'); cambioColor('x')">X</button>
+            <button id="buttony" onclick="elegirLetra('y'); cambioColor('y')">Y</button>
+            <button id="buttonz" onclick="elegirLetra('z'); cambioColor('z')">Z</button>
+
+        </div>
+
+        <div class="texto">
+            <h1 class="base" id="base"></h1>
+        </div>
+
+        <div class="suelo">
+            <img class="nievesuelo" src="recursos/img/nieve.png" alt="suelo">
+        </div>
+
+        <div id="snow"></div>
+
+    </div>
+
+
+    <div class="calavera" id="calavera" hidden><img src="recursos/img/calavera.png" alt="calavera"></div>
+    <button class="boton_reiniciar" id="reiniciar" onclick="location.reload()" hidden>Volver a jugar</button>
+
+    <audio src="recursos/audiofondo.mp3" autoplay="autoplay" loop="loop"></audio>
+
+    <script src="main.js"></script>  
+
+</body>
+</html>
