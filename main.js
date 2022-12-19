@@ -6,6 +6,10 @@ array_guion = palabraGuion.split(" ")
 let contadoraciertos = 0
 let contadorfallos = 0
 
+let correcto = new Audio("recursos/correcto.mp3")
+let error = new Audio("recursos/error.mp3")
+
+
 
 document.getElementById("base").textContent = palabraGuion
 
@@ -17,6 +21,7 @@ function elegirLetra(letra) {
                 array_guion[i] = letra
                 document.getElementById("base").textContent = array_guion.join(' ')
                 contadoraciertos = contadoraciertos+1
+                correcto.play()
 
                 if(contadoraciertos == palabra.length){
                     document.getElementById("victoria").removeAttribute("hidden")
@@ -29,25 +34,31 @@ function elegirLetra(letra) {
         switch(contadorfallos){
             case 0:
                 document.getElementById("papanoel2").removeAttribute("hidden")
+                error.play()
             break;
 
             case 1:
                 document.getElementById("papanoel3").removeAttribute("hidden")
+                error.play()
             break;
 
             case 2:
                 document.getElementById("papanoel4").removeAttribute("hidden")
+                error.play()
             break;
 
             case 3:
                 document.getElementById("papanoel5").removeAttribute("hidden")
+                error.play()
             break;
 
             case 4:
                 document.getElementById("papanoel6").removeAttribute("hidden")
+                error.play()
             break;
 
             case 5:
+                error.play()
                 document.getElementById("papanoel7").removeAttribute("hidden")
                 document.getElementById("calavera").removeAttribute("hidden")
                 document.getElementById("reiniciar").removeAttribute("hidden")
