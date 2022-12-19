@@ -1,0 +1,243 @@
+body{
+    background-color: #333849;
+    margin: 0;
+}
+.borroso{
+    filter: blur();
+}
+
+.papanoel1{
+    left: 50%;
+    top: 13%;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+}
+.papanoel2{
+    left: 50%;
+    top: 13%;
+    height: 70%;
+    position: absolute;
+    z-index: 2;
+}
+.papanoel3{
+    left: 50%;
+    top: 13%;
+    height: 70%;
+    position: absolute;
+    z-index: 3;
+}
+.papanoel4{
+    left: 50%;
+    top: 13%;
+    height: 70%;
+    position: absolute;
+    z-index: 4;
+}
+.papanoel5{
+    left: 50%;
+    top: 13%;
+    height: 70%;
+    position: absolute;
+    z-index: 5;   
+}
+.papanoel6{
+    left: 50%;
+    top: 13%;
+    height: 70%;
+    position: absolute;
+    z-index: 6;
+}
+.papanoel7{
+    left: 50%;
+    top: 13%;
+    height: 70%;
+    position: absolute;
+    z-index: 7;
+}
+
+.trineo{
+    left: 75%;
+    top: 60%;
+    height: 40%;
+    position: absolute;
+    z-index: 1;
+}
+
+.victoria{
+    position: absolute;
+    z-index: 21;
+    top: 17%;
+    left: 35%;
+    height: 800px;
+    width: 600px;
+}
+
+.calavera{
+    position: absolute;
+    z-index: 21;
+    top: 17%;
+    left: 35%;
+    height: 800px;
+    width: 600px;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite; 
+}
+
+.victoria{
+    position: absolute;
+    width: 650px;
+    height: 100px;
+    background: transparent;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); }
+ }
+
+
+
+/* ANIMACION CALAVERA */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.botones{
+    background-image: url("recursos/img/tablon.png");
+    border-radius: 10px;
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 2.5%;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    border-radius: 40px;
+    font-family: 'navidad';
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: 'navidad';
+    src: url('recursos/Home_Christmas.otf') format('truetype');
+}
+
+
+.texto{
+    position: absolute;
+    font-family: 'navidad';
+    left: 5%;
+    top: 20%;
+    height: 600px;
+    width: 800px;
+    z-index: 11;
+}
+
+.base{
+    font-size: 100px;
+    color: #c0ffbd;
+}
+
+.suelo{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 300px;
+}
+
+.nievesuelo{
+    width: 100%;
+}
+
+.boton_reiniciar{
+    position: absolute;
+    font-family:'navidad';
+    font-size:30px;
+    width:200px;
+    height:100px;
+    top: 75%;
+    left: 42%;
+    background:hsl(0, 84%, 80%);
+    border: 2px solid black;
+    color:black;
+    cursor:pointer;
+    z-index: 21;
+    transition: ease 0.5s;
+}
+
+.boton_reiniciar2{
+    position: absolute;
+    font-family:'navidad';
+    font-size:30px;
+    width:200px;
+    height:100px;
+    top: 75%;
+    left: 42%;
+    background:rgb(175, 235, 158);
+    border: 2px solid black;
+    color:black;
+    cursor:pointer;
+    z-index: 21;
+    transition: ease 0.5s;
+}
+
+.boton_reiniciar:hover{
+    background:rgba(255, 11, 11, 0.2);
+    animation: shake 0.5s;
+    animation-iteration-count: infinite; 
+}
+
+/* EFECTO NEVADO */
+
+snow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* BOTON SONIDO */
+
+.botonaudio{
+    position: absolute;
+    left: 93%;
+    top: 5%;
+    border: white 2px solid;
+    border-radius: 15px;
+    z-index: 5;
+    height: 60px;
+    width: 65px;
+    color: whitesmoke;
+    background-image: url("recursos/img/musica.png");
+    padding: 5px;
+    box-shadow: inset 0px 0px 25px 0px;
+}
+
+.imgsonido{
+    height: 100%;
+}
